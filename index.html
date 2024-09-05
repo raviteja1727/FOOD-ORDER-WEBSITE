@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Food Order</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>College Cafeteria</h1>
+  </header>
+
+  <section class="menu">
+    <h2>Menu</h2>
+    <div class="menu-item">
+      <h3>Pizza</h3>
+      <p>Price: $8</p>
+      <button onclick="addToCart('Pizza', 8)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Burger</h3>
+      <p>Price: $5</p>
+      <button onclick="addToCart('Burger', 5)">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Pasta</h3>
+      <p>Price: $7</p>
+      <button onclick="addToCart('Pasta', 7)">Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="total-price">0</span></p>
+    <button onclick="placeOrder()">Place Order</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
